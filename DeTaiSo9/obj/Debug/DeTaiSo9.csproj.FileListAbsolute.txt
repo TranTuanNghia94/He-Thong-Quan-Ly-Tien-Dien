@@ -1,0 +1,54 @@
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\DeTaiSo9.exe.config
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\DeTaiSo9.exe
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\DeTaiSo9.pdb
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.csprojResolveAssemblyReference.cache
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\MainWindow.g.cs
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\App.g.cs
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9_MarkupCompile.cache
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9_MarkupCompile.lref
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\MainWindow.baml
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.g.resources
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.Properties.Resources.resources
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.csproj.GenerateResource.Cache
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.exe
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.pdb
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\EntityFramework.dll
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\MySql.Data.dll
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\EntityFramework.xml
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\MySql.Data.xml
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\MySql.Data.Entity.EF6.xml
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\MaterialDesignColors.dll
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\C#\DeTaiSo9\DeTaiSo9\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\C#\DeTaiSo9\DeTaiSo9\obj\Debug\App.baml
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\DeTaiSo9.exe.config
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.exe
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.pdb
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\DeTaiSo9.exe
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\DeTaiSo9.pdb
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\MaterialDesignColors.dll
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\MySql.Data.dll
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\MySql.Data.xml
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\MainWindow.g.cs
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\App.g.cs
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9_MarkupCompile.cache
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9_MarkupCompile.lref
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\App.baml
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\MainWindow.baml
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.g.resources
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.Properties.Resources.resources
+C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.csproj.GenerateResource.Cache
