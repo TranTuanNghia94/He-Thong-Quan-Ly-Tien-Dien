@@ -110,6 +110,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 dgrThongTinKh.ItemsSource = db.DbKhachHang.ToList();
                 MessageBox.Show("Lưu Thành Công");
+                cbMaKH.ItemsSource = (from p in db.DbKhachHang select p.MaKh).ToList();
                 txtMaKh.Text = txtDiaChi.Text = txtSDT.Text = "";
             }
             //else
@@ -129,6 +130,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Sửa Thành công");
                 dgrThongTinKh.ItemsSource = db.DbKhachHang.ToList();
+                cbMaKH.ItemsSource = (from p in db.DbKhachHang select p.MaKh).ToList();
                 txtMaKh.IsEnabled = true;
                 txtMaKh.Text = txtDiaChi.Text = txtSDT.Text = "";
             }
@@ -147,6 +149,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 dgrThongTinKh.ItemsSource = db.DbKhachHang.ToList();
                 MessageBox.Show("Xóa Thành Công");
+                cbMaKH.ItemsSource = (from p in db.DbKhachHang select p.MaKh).ToList();
                 txtMaKh.IsEnabled = true;
                 txtSDT.Text = txtDiaChi.Text = txtMaKh.Text = "";
             }
@@ -179,6 +182,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 dgrThongTinKV.ItemsSource = db.DbKhuvuc.ToList();
                 MessageBox.Show("Thêm thành công");
+                cbMaKV.ItemsSource = (from p in db.DbKhuvuc select p.MaKhuVuc).ToList();
                 txtMaKhuVuc.Text = txtTenKhuVuc.Text = txtQuanHuyen.Text = "";
                 
             }
@@ -198,6 +202,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Sửa Thành công");
                 dgrThongTinKV.ItemsSource = db.DbKhuvuc.ToList();
+                cbMaKV.ItemsSource = (from p in db.DbKhuvuc select p.MaKhuVuc).ToList();
                 txtMaKhuVuc.Text = txtQuanHuyen.Text = txtTenKhuVuc.Text = "";
                 txtMaKhuVuc.IsEnabled = true;
             }
@@ -216,6 +221,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Xóa thành công");
                 dgrThongTinKV.ItemsSource = db.DbKhuvuc.ToList();
+                cbMaKV.ItemsSource = (from p in db.DbKhuvuc select p.MaKhuVuc).ToList();
                 txtMaKhuVuc.IsEnabled = true;
                 txtMaKhuVuc.Text = txtTenKhuVuc.Text = txtQuanHuyen.Text = "";
             }
@@ -248,6 +254,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Thêm thành công");
                 dgrThongTinDK.ItemsSource = db.DbDienKe.ToList();
+                cbDienKe.ItemsSource = (from p in db.DbDienKe select p.MaDienKe).ToList();
                 txtMaDienKe.Text = txtMaKhuVuc.Text = txtHieuDienThe.Text = txtGhiChu.Text = txtNuocSanXuat.Text = "";
             }
             catch
@@ -269,6 +276,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Sửa Thành công");
                 dgrThongTinDK.ItemsSource = db.DbDienKe.ToList();
+                cbDienKe.ItemsSource = (from p in db.DbDienKe select p.MaDienKe).ToList();
                 txtMaDienKe.IsEnabled = true;
                 txtMaDienKe.Text = txtMaKhuVuc.Text = txtHieuDienThe.Text = txtGhiChu.Text = txtNuocSanXuat.Text = "";
             }
@@ -288,6 +296,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Xóa thành công");
                 dgrThongTinDK.ItemsSource = db.DbDienKe.ToList();
+                cbDienKe.ItemsSource = (from p in db.DbDienKe select p.MaDienKe).ToList();
                 txtMaDienKe.IsEnabled = true;
                 txtMaDienKe.Text = txtMaKhuVuc.Text = txtHieuDienThe.Text = txtGhiChu.Text = txtNuocSanXuat.Text = "";
             }
@@ -324,6 +333,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Thêm thành công");
                 dgrDonGia.ItemsSource = db.DbDonGia.ToList();
+                cbMaDonGia.ItemsSource = (from p in db.DbDonGia select p.MaDonGia).ToList();
                 txtDonGia.Text = txtDenKw.Text = txtTuKwt.Text = txtSoTien.Text = txtGhiChuDonGia.Text = "";
             }
             catch
@@ -345,6 +355,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Sửa Thành công");
                 dgrDonGia.ItemsSource = db.DbDonGia.ToList();
+                cbMaDonGia.ItemsSource = (from p in db.DbDonGia select p.MaDonGia).ToList();
                 txtDonGia.Text = txtDenKw.Text = txtTuKwt.Text = txtSoTien.Text = txtGhiChuDonGia.Text = "";
                 txtDonGia.IsEnabled = true;
             }
@@ -365,6 +376,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Xóa thành công");
                 dgrDonGia.ItemsSource = db.DbDonGia.ToList();
+                cbMaDonGia.ItemsSource = (from p in db.DbDonGia select p.MaDonGia).ToList();
                 txtDonGia.Text = txtDenKw.Text = txtTuKwt.Text = txtSoTien.Text = txtGhiChuDonGia.Text = "";
                 txtDonGia.IsEnabled = true;
             }
@@ -399,6 +411,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Thêm thành công");
                 dgrHoaDon.ItemsSource = db.DbHoaDon.ToList();
+                cbSoHoaDon.ItemsSource = (from p in db.DbHoaDon select p.SoHoaDon).ToList();
                 txtHoaDon.Text = txtThang.Text = txtThanhTien.Text = "";
             }
             catch
@@ -418,6 +431,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Sửa Thành công");
                 dgrHoaDon.ItemsSource = db.DbHoaDon.ToList();
+                cbSoHoaDon.ItemsSource = (from p in db.DbHoaDon select p.SoHoaDon).ToList();
                 txtThang.Text = txtThanhTien.Text = txtHoaDon.Text = "";
                 txtHoaDon.IsEnabled = true;
             }
@@ -437,6 +451,7 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Xóa thành công");
                 dgrHoaDon.ItemsSource = db.DbHoaDon.ToList();
+                cbSoHoaDon.ItemsSource = (from p in db.DbHoaDon select p.SoHoaDon).ToList();
                 txtHoaDon.Text = txtThang.Text = txtThanhTien.Text = "";
                 txtDonGia.IsEnabled = true;
             }
@@ -470,7 +485,7 @@ namespace DeTaiSo9
                 db.DbChiTietHoaDon.Add(ct);
                 db.SaveChanges();
                 MessageBox.Show("Thêm thành công");
-                dgrThongTinChiTietHD.ItemsSource = db.DbChiTietHoaDon.ToList();
+                dgrThongTinChiTietHD.ItemsSource = db.DbChiTietHoaDon.ToList();;
                 txtSoLuongKw.Text = "";
             }
             catch
