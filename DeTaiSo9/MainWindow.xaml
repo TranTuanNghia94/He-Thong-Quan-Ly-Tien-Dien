@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DeTaiSo9"
+        xmlns:VM="clr-namespace:DeTaiSo9.Models"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -12,6 +13,9 @@
         TextElement.FontSize="14"
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
         Title="MainWindow" Height="500" Width="730">
+    <Window.Resources>
+        <VM:DonGia x:Key="DG"/>
+    </Window.Resources>
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Image/background1.jpg" />
@@ -27,11 +31,11 @@
             </Grid.RowDefinitions>
             <Grid Grid.Column="0" Grid.Row="1" Margin="-5,10,0,-10" >
                 <Button Name="btnKhachHang" Height="30" Content="Khách Hàng" Margin="35,10,38,344" Click="btnKhachHang_Click"  />
-                <Button Name="btnChiTietHoaDon" Height="30" Content="Chi Tiết Hóa Đơn" Margin="35,234,38,120" Click="btnChiTietHoaDon_Click"  />
+                <Button Name="btnChiTietHoaDon" Height="30" Content="Chi Tiết Hóa Đơn" Margin="35,238,38,116" Click="btnChiTietHoaDon_Click"  />
                 <Button Name="btnDonGia" Content="Đơn Giá" Height="30" Margin="35,147,38,207" Click="btnDonGia_Click"  />
                 <Button Name="btnDienKe" Content="Điện Kế" Height="30" Margin="35,100,38,254" Click="btnDienKe_Click"  />
                 <Button Name="btnKhuVuc" Content="Khu Vực" Height="30" Margin="35,55,38,299" Click="btnKhuVuc_Click"  />
-                <Button Name="btnHoaDon" Content="Hóa Đơn" Height="30" Margin="35,190,38,164" Click="btnHoaDon_Click"  />
+                <Button Name="btnHoaDon" Content="Hóa Đơn" Height="30" Margin="35,194,38,160" Click="btnHoaDon_Click"  />
             </Grid>
 
             <Grid Grid.ColumnSpan="2" Grid.Row="0">
@@ -46,7 +50,7 @@
                 <Label Content="Số ĐT" Height="30" Margin="44,114,329,240" />
                 <TextBox Name="txtMaKh" Height="25" Margin="230,49,71,310" />
                 <TextBox Name="txtDiaChi" Height="25" Margin="230,79,71,280" />
-                <TextBox KeyUp="txtSDT_KeyUp" Name="txtSDT" Height="25" Margin="230,109,71,250" />
+                <TextBox TextInput="txtSDT_TextInput" Name="txtSDT" Height="25" Margin="230,109,71,250" />
                 <DataGrid IsReadOnly="True" MouseDoubleClick="dgrThongTinKh_MouseDoubleClick" Name="dgrThongTinKh" Margin="10,164,22,81" AutoGenerateColumns="False" CanUserReorderColumns="False" CanUserAddRows="False">
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding MaKh}" Header="Ma Khách Hàng"/>
@@ -134,9 +138,9 @@
                 <Label Content="Số Hóa Đơn" Height="30" Margin="46,44,323,310" />
                 <Label Content="Mã Đơn Giá" Height="30" Margin="46,86,323,268"  />
                 <Label Content="Số Lượng KW" Height="30" Margin="46,121,323,233" RenderTransformOrigin="0.976,0.4"  />
-                <ComboBox Name="cbSoHoaDon" Height="25" Margin="202,44,70,315" />
-                <ComboBox Name="cbMaDonGia" Height="25" Margin="202,79,70,280" />
-                <TextBox KeyUp="txtSoLuongKw_KeyUp" Name="txtSoLuongKw" Height="25" Margin="202,114,70,245" />
+                <ComboBox  Name="cbSoHoaDon" Height="25" Margin="202,44,70,315" />
+                <ComboBox  Name="cbMaDonGia" Height="25" Margin="202,79,70,280" />
+                <TextBox IsEnabled="False" Text="{Binding SoLuongKw}" KeyUp="txtSoLuongKw_KeyUp" Name="txtSoLuongKw" Height="25" Margin="202,114,70,245" />
                 <Button Click="btnThemChiTietHD_Click" Name="btnThemChiTietHD"  Height="25" Width="100" Margin="10,324,297,35" >
                     <materialDesign:PackIcon Kind="ContentSave" />
                 </Button>
@@ -163,9 +167,9 @@
                 <Label Content="Mã Điện Kế" Height="30" Margin="0,114,388,240"  />
                 <Label Content="Thành Tiền" Height="30" Margin="301,84,70,270"  />
                 <TextBox Name="txtHoaDon" Height="25" Margin="122,44,242,315" />
-                <TextBox KeyUp="txtThang_KeyUp" Name="txtThang" Height="25" Margin="122,79,242,280" />
+                <TextBox TextInput="txtThang_TextInput" Name="txtThang" Height="25" Margin="122,79,242,280" />
                 <ComboBox Name="cbDienKe" Height="25" Margin="122,114,242,245" />
-                <TextBox KeyUp="txtThanhTien_KeyUp" Name="txtThanhTien" Height="25" Margin="301,114,49,245" />
+                <TextBox IsEnabled="False" TextInput="txtThanhTien_TextInput" Name="txtThanhTien" Height="25" Margin="301,114,49,245" />
                 <Button Click="btnThemHD_Click" Name="btnThemHD"  Height="25" Width="100" Margin="10,324,297,35" >
                     <materialDesign:PackIcon Kind="ContentSave" />
                 </Button>
@@ -195,10 +199,10 @@
                 <Label Content="Đến Kw" Height="30" Margin="284,109,148,245" />
                 <Label Content="Ghi Chú" Height="30" Margin="284,39,148,315" />
                 <TextBox Name="txtDonGia" Height="25" Margin="104,39,271,320" />
-                <TextBox KeyUp="txtSoTien_KeyUp" Name="txtSoTien" Height="25" Margin="104,74,271,285" />
-                <TextBox KeyUp="txtTuKwt_KeyUp" Name="txtTuKwt" Height="25" Margin="105,109,271,250" />
-                <TextBox KeyUp="txtDenKw_KeyUp" Name="txtDenKw" Height="25" Margin="362,109,31,250"  />
-                <TextBox Name="txtGhiChuDonGia" Height="25" Margin="362,39,31,320"/>
+                <TextBox TextInput="txtSoTien_TextInput"  Name="txtSoTien" Height="25" Margin="104,74,271,285" />
+                <TextBox TextInput="txtTuKwt_TextInput"  Name="txtTuKwt" Height="25" Margin="105,109,271,250" />
+                <TextBox TextInput="txtDenKw_TextInput"  Name="txtDenKw" Height="25" Margin="362,109,31,250"  />
+                <TextBox  Name="txtGhiChuDonGia" Height="25" Margin="362,39,31,320"/>
 
                 <Button Click="btnThemDonGia_Click" Name="btnThemDonGia"  Height="25" Width="100" Margin="10,324,297,35" >
                     <materialDesign:PackIcon Kind="ContentSave" />

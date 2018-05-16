@@ -52,3 +52,30 @@ C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\MainWindow.baml
 C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.g.resources
 C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.Properties.Resources.resources
 C:\Users\DELL\Downloads\New folder\DeTaiSo9\DeTaiSo9\obj\Debug\DeTaiSo9.csproj.GenerateResource.Cache
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\DeTaiSo9.exe.config
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\DeTaiSo9.exe
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\DeTaiSo9.pdb
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\EntityFramework.dll
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\MaterialDesignColors.dll
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\MySql.Data.dll
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\EntityFramework.xml
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\MySql.Data.xml
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\bin\Debug\MySql.Data.Entity.EF6.xml
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\DeTaiSo9.csprojResolveAssemblyReference.cache
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\MainWindow.g.cs
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\App.g.cs
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\DeTaiSo9_MarkupCompile.cache
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\DeTaiSo9_MarkupCompile.lref
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\App.baml
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\MainWindow.baml
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\DeTaiSo9.g.resources
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\DeTaiSo9.Properties.Resources.resources
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\DeTaiSo9.csproj.GenerateResource.Cache
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\DeTaiSo9.exe
+D:\GitHub\H--th-ng-qu-n-l--ti-n--i-n\DeTaiSo9\obj\Debug\DeTaiSo9.pdb

@@ -171,6 +171,23 @@ namespace DeTaiSo9
             }
         }
 
+        private void txtSDT_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            try
+            {
+                int a = Int32.Parse(txtSDT.Text);
+                if (sender.Equals(Key.Back) == true)
+                {
+                    int b = Int32.Parse(txtSDT.Text);
+                }
+            }
+            catch
+            {
+
+                MessageBox.Show("Bạn không được nhập số");
+                txtSDT.Text = "";
+            }
+        }
 
         // KHU VỰC
         private void btnThemKV_Click(object sender, RoutedEventArgs e)
@@ -322,6 +339,19 @@ namespace DeTaiSo9
             }
         }
 
+        private void txtHieuDienThe_KeyUp(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                int a = Int32.Parse(txtHieuDienThe.Text);
+            }
+            catch
+            {
+
+                MessageBox.Show("Bạn không được nhập chữ");
+                txtHieuDienThe.Text = "";
+            }
+        }
 
         // ĐƠN GIÁ
         private void btnThemDonGia_Click(object sender, RoutedEventArgs e)
@@ -355,6 +385,8 @@ namespace DeTaiSo9
                 db.SaveChanges();
                 MessageBox.Show("Sửa Thành công");
                 dgrDonGia.ItemsSource = db.DbDonGia.ToList();
+                dgrHoaDon.ItemsSource = db.DbHoaDon.ToList();
+                dgrThongTinChiTietHD.ItemsSource = db.DbChiTietHoaDon.ToList();
                 cbMaDonGia.ItemsSource = (from p in db.DbDonGia select p.MaDonGia).ToList();
                 txtDonGia.Text = txtDenKw.Text = txtTuKwt.Text = txtSoTien.Text = txtGhiChuDonGia.Text = "";
                 txtDonGia.IsEnabled = true;
@@ -400,13 +432,72 @@ namespace DeTaiSo9
             }
         }
 
+        private void txtTuKwt_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            try
+            {
+                double a = Double.Parse(txtTuKwt.Text);
+                if (Double.Parse(txtDenKw.Text) < Double.Parse(txtTuKwt.Text))
+                {
+                    MessageBox.Show("Số không hợp lệ");
+                    txtDenKw.Text = "";
+                }
+                if (sender.Equals(Key.Back) == true)
+                {
+                    double b = Double.Parse(txtTuKwt.Text);
+                }
+
+            }
+            catch
+            {
+
+                MessageBox.Show("Bạn không được nhập chữ");
+                txtTuKwt.Text = "";
+            }
+        }
+
+        private void txtDenKw_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            try
+            {
+                double a = Double.Parse(txtDenKw.Text);
+                if (sender.Equals(Key.Back) == true)
+                {
+                    double b = Double.Parse(txtDenKw.Text);
+                }
+            }
+            catch
+            {
+
+                MessageBox.Show("Bạn không được nhập chữ");
+                txtDenKw.Text = "";
+            }
+        }
+
+        private void txtSoTien_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            try
+            {
+                double a = Double.Parse(txtSoTien.Text);
+                if (sender.Equals(Key.Back) == true)
+                {
+                    double b = Double.Parse(txtSoTien.Text);
+                }
+            }
+            catch
+            {
+
+                MessageBox.Show("Bạn không được nhập chữ");
+                txtSoTien.Text = "";
+            }
+        }
 
         // HÓA ĐƠN
         private void btnThemHD_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                var hd = new HoaDon { SoHoaDon = txtHoaDon.Text, MaDienKe = cbDienKe.Text, Thang = Int32.Parse(txtThang.Text), ThanhTien = Int32.Parse(txtThanhTien.Text) };
+                var hd = new HoaDon { SoHoaDon = txtHoaDon.Text, MaDienKe = cbDienKe.Text, Thang = Int32.Parse(txtThang.Text), ThanhTien = 0 };
                 db.DbHoaDon.Add(hd);
                 db.SaveChanges();
                 MessageBox.Show("Thêm thành công");
@@ -453,7 +544,7 @@ namespace DeTaiSo9
                 dgrHoaDon.ItemsSource = db.DbHoaDon.ToList();
                 cbSoHoaDon.ItemsSource = (from p in db.DbHoaDon select p.SoHoaDon).ToList();
                 txtHoaDon.Text = txtThang.Text = txtThanhTien.Text = "";
-                txtDonGia.IsEnabled = true;
+                txtHoaDon.IsEnabled = true;
             }
             catch
             {
@@ -475,17 +566,60 @@ namespace DeTaiSo9
             }
         }
 
+        private void txtThanhTien_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            try
+            {
+
+                double a = Double.Parse(txtThanhTien.Text);
+                if (sender.Equals(Key.Back) == true)
+                {
+                    double b = Double.Parse(txtThanhTien.Text);
+                }
+            }
+            catch
+            {
+
+                MessageBox.Show("Bạn không được nhập chữ");
+                txtThanhTien.Text = "";
+            }
+        }
+        private void txtThang_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            try
+            {
+                int a = Int32.Parse(txtThang.Text);
+                if (sender.Equals(Key.Back) == true)
+                {
+                    int b = Int32.Parse(txtThang.Text);
+                }
+            }
+            catch
+            {
+
+                MessageBox.Show("Bạn không được nhập chữ");
+                txtThang.Text = "";
+            }
+        }
+
 
         // CHI TIẾT HÓA ĐƠN
         private void btnThemChiTietHD_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                var ct = new ChiTietHoadon { MaDonGia = cbMaDonGia.Text, SoHoaDon = cbSoHoaDon.Text, SoLuongKw = Int32.Parse(txtSoLuongKw.Text) };
+                double tmp1 = (from p in db.DbDonGia where p.MaDonGia == cbMaDonGia.Text select p.DenKw).Single();
+                double tmp2 = (from m in db.DbDonGia where m.MaDonGia == cbMaDonGia.Text select m.TuKw).Single();
+                double tmp3 = (from m in db.DbDonGia where m.MaDonGia == cbMaDonGia.Text select m.SoTien).Single();
+                var ct = new ChiTietHoadon { MaDonGia = cbMaDonGia.Text, SoHoaDon = cbSoHoaDon.Text, SoLuongKw = (tmp1 - tmp2) };
                 db.DbChiTietHoaDon.Add(ct);
+                db.SaveChanges();
+                var TinhTien = (from n in db.DbHoaDon where n.SoHoaDon== cbSoHoaDon.Text select n).Single();
+                TinhTien.ThanhTien = (tmp1 - tmp2) * tmp3;
                 db.SaveChanges();
                 MessageBox.Show("Thêm thành công");
                 dgrThongTinChiTietHD.ItemsSource = db.DbChiTietHoaDon.ToList();;
+                dgrHoaDon.ItemsSource = db.DbHoaDon.ToList();
                 txtSoLuongKw.Text = "";
             }
             catch
@@ -534,12 +668,12 @@ namespace DeTaiSo9
         private void dgrThongTinChiTietHD_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             var ct = (ChiTietHoadon)dgrThongTinChiTietHD.SelectedItem;
-            var tmp = db.DbChiTietHoaDon.Find(ct.SoHoaDon,ct.MaDonGia);
+            var tmp1 = (from p in db.DbChiTietHoaDon where p.SoHoaDon == ct.SoHoaDon select p ).Single();
             if (ct != null)
             {
                 txtSoLuongKw.Text = ct.SoLuongKw.ToString();
-                cbMaDonGia.SelectedIndex = db.DbChiTietHoaDon.ToList().IndexOf(tmp);
-                cbSoHoaDon.SelectedIndex = db.DbChiTietHoaDon.ToList().IndexOf(tmp);
+                cbMaDonGia.SelectedIndex = db.DbChiTietHoaDon.ToList().IndexOf(tmp1);
+                cbSoHoaDon.SelectedIndex = db.DbChiTietHoaDon.ToList().IndexOf(tmp1);
             }
         }
 
@@ -557,102 +691,11 @@ namespace DeTaiSo9
             }
         }
 
-        private void txtThang_KeyUp(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                int a = Int32.Parse(txtThang.Text);
-            }
-            catch
-            {
 
-                MessageBox.Show("Bạn không được nhập số");
-                txtThang.Text = "";
-            }
-        }
+     
 
-        private void txtSDT_KeyUp(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                int a = Int32.Parse(txtSDT.Text);
-            }
-            catch
-            {
+       
 
-                MessageBox.Show("Bạn không được nhập số");
-                txtSDT.Text = "";
-            }
-        }
-
-        private void txtThanhTien_KeyUp(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                int a = Int32.Parse(txtThanhTien.Text);
-            }
-            catch
-            {
-
-                MessageBox.Show("Bạn không được nhập số");
-                txtThanhTien.Text = "";
-            }
-        }
-
-        private void txtSoTien_KeyUp(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                int a = Int32.Parse(txtSoTien.Text);
-            }
-            catch
-            {
-
-                MessageBox.Show("Bạn không được nhập số");
-                txtSoTien.Text = "";
-            }
-        }
-
-        private void txtTuKwt_KeyUp(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                int a = Int32.Parse(txtTuKwt.Text);
-            }
-            catch
-            {
-
-                MessageBox.Show("Bạn không được nhập số");
-                txtTuKwt.Text = "";
-            }
-        }
-
-        private void txtDenKw_KeyUp(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                int a = Int32.Parse(txtDenKw.Text);
-            }
-            catch
-            {
-
-                MessageBox.Show("Bạn không được nhập số");
-                txtDenKw.Text = "";
-            }
-        }
-
-        private void txtHieuDienThe_KeyUp(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                int a = Int32.Parse(txtHieuDienThe.Text);
-            }
-            catch
-            {
-
-                MessageBox.Show("Bạn không được nhập số");
-                txtHieuDienThe.Text = "";
-            }
-        }
+        
     }
 }
